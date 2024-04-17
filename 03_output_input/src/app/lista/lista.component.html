@@ -1,0 +1,26 @@
+<h4>Sono il component Lista</h4>
+
+<ol>
+    <li *ngFor="let elemento of elenco">
+        {{elemento}}
+    </li>
+</ol>
+
+<hr />
+
+<table>
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Cognome</th>
+            <th>Matricola</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let stu of elenco_studenti">
+            <td>{{stu.nome}}</td>
+            <td>{{stu.cognome}}</td>
+            <td>{{stu.matr}}</td>
+        </tr>
+    </tbody>
+</table>

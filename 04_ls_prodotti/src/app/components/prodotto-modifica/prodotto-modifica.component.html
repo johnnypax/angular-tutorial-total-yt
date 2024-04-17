@@ -1,0 +1,28 @@
+<div class="row">
+    <div class="col">
+        <h1>Modifica prodotto</h1>
+        
+        <div class="form-group">
+            <label for="input-codice">Codice</label>
+            <input type="text" class="form-control" id="input-codice" [(ngModel)]="codi" readonly/>
+        </div>
+        <div class="form-group">
+            <label for="input-nome">Nome</label>
+            <input type="text" class="form-control" id="input-nome" [(ngModel)]="nome" />
+        </div>
+        <div class="form-group">
+            <label for="input-descrizione">Descrizione</label>
+            <textarea class="form-control" id="input-descrizione" [(ngModel)]="desc"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="input-prezzo">Prezzo</label>
+            <input type="number" min="0" class="form-control" id="input-prezzo" [(ngModel)]="prez" />
+        </div>
+        <div class="form-group">
+            <label for="input-quantita">Quantità</label>
+            <input type="number" min="0" class="form-control" id="input-quantita" [(ngModel)]="quan" />
+        </div>
+
+        <button type="button" class="btn btn-primary" (click)="modifica()">Modifica</button>
+    </div>
+</div>
